@@ -2,7 +2,7 @@ import { classNames } from "../utils/class-names";
 import { useAudio } from "../hooks/use-audio";
 import { Switch } from "@headlessui/react";
 
-function Pad({ className, audio }) {
+function Pad({ className, audio, key }) {
   const [playing, toggle] = useAudio(audio.clip);
 
   return (
@@ -15,7 +15,9 @@ function Pad({ className, audio }) {
           ? classNames(className, "shadow-2xl scale-[98%]")
           : "bg-gradient-radial from-gray-200 to-white"
       )}
-    ></Switch>
+    >
+      <span>{key}</span>
+    </Switch>
   );
 }
 
