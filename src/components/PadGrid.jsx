@@ -28,28 +28,28 @@ function PadGrid() {
           "bg-gradient-radial from-teal-200 to-teal-400 shadow-teal-600"
         }
         audio={{ name: "bass-drum", clip: bassDrum }}
-        key="Q"
+        keyId="Q"
       />
       <Pad
         className={
           "bg-gradient-radial from-teal-200 to-teal-400 shadow-teal-600"
         }
         audio={{ name: "drum-deep-impact", clip: drumDeepImpact }}
-        key="W"
+        keyId="W"
       />
       <Pad
         className={
           "bg-gradient-radial from-teal-200 to-teal-400 shadow-teal-600"
         }
         audio={{ name: "metallic-drum", clip: metallicDrum }}
-        key="E"
+        keyId="E"
       />
       <Pad
         className={
           "bg-gradient-radial from-teal-200 to-teal-400 shadow-teal-600"
         }
         audio={{ name: "soft-drum", clip: softDrum }}
-        key="A"
+        keyId="A"
       />
 
       <Pad
@@ -57,7 +57,7 @@ function PadGrid() {
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "futuristic-bass", clip: futuristicBass }}
-        key="S"
+        keyId="S"
       />
 
       <Pad
@@ -65,21 +65,21 @@ function PadGrid() {
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "knocking-sub-bass", clip: knockingSubBass }}
-        key="D"
+        keyId="D"
       />
       <Pad
         className={
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "pulsating-bass", clip: pulsatingBass }}
-        key="Z"
+        keyId="Z"
       />
       <Pad
         className={
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "drum-bass-hit", clip: drumBassHit }}
-        key="X"
+        keyId="X"
       />
 
       <Pad
@@ -87,7 +87,7 @@ function PadGrid() {
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "drum-joke-accent", clip: drumJokeAccent }}
-        key="C"
+        keyId="C"
       />
 
       <Pad
@@ -95,42 +95,42 @@ function PadGrid() {
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "drum-joke", clip: drumJoke }}
-        key="O"
+        keyId="O"
       />
       <Pad
         className={
           "bg-gradient-radial from-teal-200 to-teal-400 shadow-teal-600"
         }
         audio={{ name: "dry-drum", clip: dryDrum }}
-        key="P"
+        keyId="P"
       />
       <Pad
         className={"bg-gradient-radial from-sky-200 to-sky-400 shadow-sky-600"}
         audio={{ name: "drumming-atmospheric", clip: drummingAtmospheric }}
-        key="Å"
+        keyId="Å"
       />
 
       <Pad
         className={"bg-gradient-radial from-red-400 to-red-600 shadow-red-800"}
         audio={{ name: "mystery-heartbeat", clip: mysteryHeartbeat }}
-        key="L"
+        keyId="L"
       />
       <Pad
         className={
           "bg-gradient-radial from-amber-200 to-amber-500 shadow-amber-600"
         }
         audio={{ name: "bad-joke-drums", clip: badJokeDrums }}
-        key="Ö"
+        keyId="Ö"
       />
       <Pad
         className={"bg-gradient-radial from-sky-200 to-sky-400 shadow-sky-600"}
         audio={{ name: "drumming-ambience", clip: drummingAmbience }}
-        key="Ä"
+        keyId="Ä"
       />
       <Pad
         className={"bg-gradient-radial from-sky-200 to-sky-400 shadow-sky-600"}
         audio={{ name: "drumming-jungle", clip: drummingJungle }}
-        key="M"
+        keyId="M"
       />
     </div>
   );
