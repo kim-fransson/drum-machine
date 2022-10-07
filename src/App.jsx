@@ -1,5 +1,7 @@
+import DrumMachine from "./components/DrumMachine";
+
 function App() {
-  return <div></div>;
+  return <DrumMachine />;
 }
 
 export default App;
