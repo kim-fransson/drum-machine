@@ -1,23 +1,19 @@
 import { classNames } from "../utils/class-names";
-import { useAudio } from "../hooks/use-audio";
 
-function Pad({ className, audio, keyId }) {
-  const [playing, toggle] = useAudio(audio.clip);
-
+function Pad({ className, audio, keyId, handleButtonClick }) {
   return (
-    <div
+    <button
       id={audio.name}
-      checked={playing}
-      onClick={toggle}
+      onClick={() => handleButtonClick(keyId, audio.name)}
       className={classNames(
         "drum-pad cursor-pointer border border-black rounded-md active:scale-[98%] text-transparent",
-        playing
-          ? classNames(className, "shadow-2xl scale-[98%]")
-          : "bg-gradient-radial from-gray-200 to-white"
+        className,
+        "active:shadow-2xl active:scale-[98%]"
       )}
     >
       {keyId}
-    </div>
+      <audio id={keyId} className="clip" src={audio.clip}></audio>
+    </button>
   );
 }
 
